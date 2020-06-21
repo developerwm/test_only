@@ -26,6 +26,7 @@ class MapScreenState extends State<ProfilePage>
   }
 
   _getProfile() {
+    print("test");
     Firestore.instance
         .collection('user')
         .where("email", isEqualTo: _emailIdController.text)
